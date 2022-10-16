@@ -18,7 +18,7 @@ namespace SimpleShapes_P5
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SimpleShapes());
 
-            Console.WriteLine("Brrz");
+            
         }
 
         
