@@ -11,18 +11,22 @@ namespace SimpleShapes_P5
     {
         public int Width { get; set; }
         public int Length { get; set; }
-        public int x1 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int y1 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int x2 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int y2 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int x3 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int x4 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int x1 { get; set; }
+        public int y1 { get; set; }
+        public int x2 { get; set; }
+        public int y2 { get; set; }
+        public int x3 { get; set; }
+        public int x4 { get; set; }
 
-        public Rectangle(int length, int width)
+        public Rectangle(int X1, int Y1, int X3, int Y2)
         {
             Name = "Rectangle";
-            Length = length;
-            Width = width;
+            Length = X3 - X1;
+            Width = Y2 - Y1;
+            x1 = X1;
+            y1 = Y1;
+            x3 = X3;
+            y2 = Y2;
           
         }
 
