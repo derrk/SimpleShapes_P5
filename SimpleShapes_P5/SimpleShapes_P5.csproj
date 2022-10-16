@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Parallelogram.cs" />
+    <Compile Include="Points.cs" />
     <Compile Include="Quadrilateral.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="SimpleShapes.cs">

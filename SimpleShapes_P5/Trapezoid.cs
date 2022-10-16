@@ -25,12 +25,12 @@ namespace SimpleShapes_P5
 
         public override int Area()
         {
-            throw new NotImplementedException();
+           return (Base + Roof) /* height*/ / 2;
         }
 
         public override int Perimeter()
         {
-            throw new NotImplementedException();
+            return Base + Roof + Side1 + Side2;
         }
 
         public override void GetInfo()
