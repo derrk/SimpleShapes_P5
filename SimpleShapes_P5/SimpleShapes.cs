@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SimpleShapes_P5
 {
-    public partial class Form1 : Form
+    public partial class SimpleShapes : Form
     {
-        public Form1()
+        public SimpleShapes()
         {
             InitializeComponent();
         }

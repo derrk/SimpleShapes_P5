@@ -1,6 +1,6 @@
 ﻿namespace SimpleShapes_P5
 {
-    partial class Form1
+    partial class SimpleShapes
     {
         /// <summary>
         /// Required designer variable.
