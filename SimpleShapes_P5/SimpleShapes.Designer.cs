@@ -52,10 +52,17 @@
             this.Y3 = new System.Windows.Forms.Label();
             this.X4 = new System.Windows.Forms.Label();
             this.Y4 = new System.Windows.Forms.Label();
+            this.QuadGenerator = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.AreaLabel = new System.Windows.Forms.Label();
+            this.PerimeterLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.P1box.SuspendLayout();
             this.P2box.SuspendLayout();
             this.P3box.SuspendLayout();
             this.P4box.SuspendLayout();
+            this.QuadGenerator.SuspendLayout();
             this.SuspendLayout();
             // 
             // ShapeComboBox
@@ -268,12 +275,67 @@
             this.Y4.TabIndex = 4;
             this.Y4.Text = "Y4";
             // 
+            // QuadGenerator
+            // 
+            this.QuadGenerator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.QuadGenerator.Controls.Add(this.panel1);
+            this.QuadGenerator.Controls.Add(this.PerimeterLabel);
+            this.QuadGenerator.Controls.Add(this.AreaLabel);
+            this.QuadGenerator.Controls.Add(this.textBox2);
+            this.QuadGenerator.Controls.Add(this.textBox1);
+            this.QuadGenerator.Location = new System.Drawing.Point(311, 32);
+            this.QuadGenerator.Name = "QuadGenerator";
+            this.QuadGenerator.Size = new System.Drawing.Size(467, 275);
+            this.QuadGenerator.TabIndex = 4;
+            this.QuadGenerator.TabStop = false;
+            this.QuadGenerator.Text = "Quadrilateral Generator";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(52, 249);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(199, 249);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(76, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // AreaLabel
+            // 
+            this.AreaLabel.AutoSize = true;
+            this.AreaLabel.Location = new System.Drawing.Point(17, 252);
+            this.AreaLabel.Name = "AreaLabel";
+            this.AreaLabel.Size = new System.Drawing.Size(29, 13);
+            this.AreaLabel.TabIndex = 2;
+            this.AreaLabel.Text = "Area";
+            // 
+            // PerimeterLabel
+            // 
+            this.PerimeterLabel.AutoSize = true;
+            this.PerimeterLabel.Location = new System.Drawing.Point(142, 252);
+            this.PerimeterLabel.Name = "PerimeterLabel";
+            this.PerimeterLabel.Size = new System.Drawing.Size(51, 13);
+            this.PerimeterLabel.TabIndex = 3;
+            this.PerimeterLabel.Text = "Perimeter";
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(52, 38);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(360, 190);
+            this.panel1.TabIndex = 4;
+            // 
             // SimpleShapes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(840, 479);
+            this.Controls.Add(this.QuadGenerator);
             this.Controls.Add(this.DrawButton);
             this.Controls.Add(this.P4box);
             this.Controls.Add(this.P3box);
@@ -290,6 +352,8 @@
             this.P3box.PerformLayout();
             this.P4box.ResumeLayout(false);
             this.P4box.PerformLayout();
+            this.QuadGenerator.ResumeLayout(false);
+            this.QuadGenerator.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -318,6 +382,12 @@
         private System.Windows.Forms.Label X3;
         private System.Windows.Forms.Label Y4;
         private System.Windows.Forms.Label X4;
+        private System.Windows.Forms.GroupBox QuadGenerator;
+        private System.Windows.Forms.Label PerimeterLabel;
+        private System.Windows.Forms.Label AreaLabel;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

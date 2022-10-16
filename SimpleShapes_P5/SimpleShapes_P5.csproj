@@ -54,6 +54,7 @@
     <Compile Include="Points.cs" />
     <Compile Include="Quadrilateral.cs" />
     <Compile Include="Rectangle.cs" />
+    <Compile Include="ShapeDraw.cs" />
     <Compile Include="SimpleShapes.cs">
       <SubType>Form</SubType>
     </Compile>
