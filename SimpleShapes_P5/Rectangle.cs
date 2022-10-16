@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace SimpleShapes_P5
 {
-    internal class Rectangle : Quadrilateral
+    internal class Rectangle : Quadrilateral , Points
     {
         public int Width { get; set; }
         public int Length { get; set; }
-       
+        public int x1 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int y1 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int x2 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int y2 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int x3 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int x4 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Rectangle(int length, int width)
         {

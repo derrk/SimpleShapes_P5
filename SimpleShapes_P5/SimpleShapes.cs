@@ -14,6 +14,10 @@ namespace SimpleShapes_P5
     {
         public SimpleShapes()
         {
+            Console.WriteLine("Brrz");
+
+            
+           // Rectangle Rectangle1 = new Rectangle;
             InitializeComponent();
         }
     }

@@ -17,6 +17,10 @@ namespace SimpleShapes_P5
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SimpleShapes());
+
+            Console.WriteLine("Brrz");
         }
+
+        
     }
 }

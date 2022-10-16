@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace SimpleShapes_P5
 {
-    abstract internal class Quadrilateral
+    abstract internal class Quadrilateral 
     {
 
         public string Name { get; set; }
+      //  public int x1 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+      //  public int y1 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+     //   public int x2 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+     //   public int y2 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+     //   public int x3 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+      //  public int x4 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public virtual void GetInfo()
         {
