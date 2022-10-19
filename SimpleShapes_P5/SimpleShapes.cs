@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using QuadrilateralLibrary;
+/*using System.Drawing;*/
+
 
 namespace SimpleShapes_P5
 {
@@ -66,8 +68,11 @@ namespace SimpleShapes_P5
                     y1 = int.Parse(y_P1.Text);
                     y2 = int.Parse(y_P2.Text);
                     x3 = int.Parse(x_P3.Text);
-                    Rectangle rectangle = new Rectangle(x1, y1, x3, y2);
-                    Console.WriteLine($"{rectangle.Name} has points: {x1}, {y1}, {x3}, {y2}");
+                  //  Rectangle rectangle = new Rectangle(x1, y1, x3, y2);
+                   // QuadrilateralLibrary.Quadrilateral rectangle1 = new Rectangle(x1, y1, x3, y2);
+                    // Console.WriteLine($"{rectangle.Name} has points: {x1}, {y1}, {x3}, {y2}");
+                   // AreaLabel.Text = rectangle.Area().ToString();
+                    
                     break;
                 case 1:
                     break;

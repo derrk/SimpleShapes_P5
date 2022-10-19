@@ -32,32 +32,31 @@
         {
             this.ShapeComboBox = new System.Windows.Forms.ComboBox();
             this.P1box = new System.Windows.Forms.GroupBox();
+            this.Y1 = new System.Windows.Forms.Label();
+            this.X1 = new System.Windows.Forms.Label();
             this.y_P1 = new System.Windows.Forms.TextBox();
             this.x_P1 = new System.Windows.Forms.TextBox();
             this.P2box = new System.Windows.Forms.GroupBox();
+            this.Y2 = new System.Windows.Forms.Label();
+            this.X2 = new System.Windows.Forms.Label();
             this.y_P2 = new System.Windows.Forms.TextBox();
             this.x_P2 = new System.Windows.Forms.TextBox();
             this.P3box = new System.Windows.Forms.GroupBox();
+            this.Y3 = new System.Windows.Forms.Label();
+            this.X3 = new System.Windows.Forms.Label();
             this.x_P3 = new System.Windows.Forms.TextBox();
             this.y_P3 = new System.Windows.Forms.TextBox();
             this.P4box = new System.Windows.Forms.GroupBox();
+            this.Y4 = new System.Windows.Forms.Label();
+            this.X4 = new System.Windows.Forms.Label();
             this.x_P4 = new System.Windows.Forms.TextBox();
             this.y_P4 = new System.Windows.Forms.TextBox();
             this.DrawButton = new System.Windows.Forms.Button();
-            this.X1 = new System.Windows.Forms.Label();
-            this.Y1 = new System.Windows.Forms.Label();
-            this.X2 = new System.Windows.Forms.Label();
-            this.Y2 = new System.Windows.Forms.Label();
-            this.X3 = new System.Windows.Forms.Label();
-            this.Y3 = new System.Windows.Forms.Label();
-            this.X4 = new System.Windows.Forms.Label();
-            this.Y4 = new System.Windows.Forms.Label();
             this.QuadGenerator = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.AreaLabel = new System.Windows.Forms.Label();
             this.PerimeterLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.AreaLabel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.P1box.SuspendLayout();
             this.P2box.SuspendLayout();
             this.P3box.SuspendLayout();
@@ -98,6 +97,24 @@
             this.P1box.TabStop = false;
             this.P1box.Text = "Point 1";
             // 
+            // Y1
+            // 
+            this.Y1.AutoSize = true;
+            this.Y1.Location = new System.Drawing.Point(83, 20);
+            this.Y1.Name = "Y1";
+            this.Y1.Size = new System.Drawing.Size(20, 13);
+            this.Y1.TabIndex = 3;
+            this.Y1.Text = "Y1";
+            // 
+            // X1
+            // 
+            this.X1.AutoSize = true;
+            this.X1.Location = new System.Drawing.Point(13, 20);
+            this.X1.Name = "X1";
+            this.X1.Size = new System.Drawing.Size(20, 13);
+            this.X1.TabIndex = 2;
+            this.X1.Text = "X1";
+            // 
             // y_P1
             // 
             this.y_P1.Location = new System.Drawing.Point(75, 36);
@@ -124,6 +141,24 @@
             this.P2box.TabIndex = 2;
             this.P2box.TabStop = false;
             this.P2box.Text = "Point 2";
+            // 
+            // Y2
+            // 
+            this.Y2.AutoSize = true;
+            this.Y2.Location = new System.Drawing.Point(83, 20);
+            this.Y2.Name = "Y2";
+            this.Y2.Size = new System.Drawing.Size(20, 13);
+            this.Y2.TabIndex = 4;
+            this.Y2.Text = "Y2";
+            // 
+            // X2
+            // 
+            this.X2.AutoSize = true;
+            this.X2.Location = new System.Drawing.Point(14, 20);
+            this.X2.Name = "X2";
+            this.X2.Size = new System.Drawing.Size(20, 13);
+            this.X2.TabIndex = 3;
+            this.X2.Text = "X2";
             // 
             // y_P2
             // 
@@ -152,6 +187,24 @@
             this.P3box.TabStop = false;
             this.P3box.Text = "Point 3";
             // 
+            // Y3
+            // 
+            this.Y3.AutoSize = true;
+            this.Y3.Location = new System.Drawing.Point(83, 28);
+            this.Y3.Name = "Y3";
+            this.Y3.Size = new System.Drawing.Size(20, 13);
+            this.Y3.TabIndex = 4;
+            this.Y3.Text = "Y3";
+            // 
+            // X3
+            // 
+            this.X3.AutoSize = true;
+            this.X3.Location = new System.Drawing.Point(14, 28);
+            this.X3.Name = "X3";
+            this.X3.Size = new System.Drawing.Size(20, 13);
+            this.X3.TabIndex = 3;
+            this.X3.Text = "X3";
+            // 
             // x_P3
             // 
             this.x_P3.Location = new System.Drawing.Point(6, 44);
@@ -179,6 +232,24 @@
             this.P4box.TabStop = false;
             this.P4box.Text = "Point 4";
             // 
+            // Y4
+            // 
+            this.Y4.AutoSize = true;
+            this.Y4.Location = new System.Drawing.Point(83, 17);
+            this.Y4.Name = "Y4";
+            this.Y4.Size = new System.Drawing.Size(20, 13);
+            this.Y4.TabIndex = 4;
+            this.Y4.Text = "Y4";
+            // 
+            // X4
+            // 
+            this.X4.AutoSize = true;
+            this.X4.Location = new System.Drawing.Point(14, 16);
+            this.X4.Name = "X4";
+            this.X4.Size = new System.Drawing.Size(20, 13);
+            this.X4.TabIndex = 3;
+            this.X4.Text = "X4";
+            // 
             // x_P4
             // 
             this.x_P4.Location = new System.Drawing.Point(6, 33);
@@ -203,82 +274,9 @@
             this.DrawButton.UseVisualStyleBackColor = true;
             this.DrawButton.Click += new System.EventHandler(this.DrawButton_Click);
             // 
-            // X1
-            // 
-            this.X1.AutoSize = true;
-            this.X1.Location = new System.Drawing.Point(13, 20);
-            this.X1.Name = "X1";
-            this.X1.Size = new System.Drawing.Size(20, 13);
-            this.X1.TabIndex = 2;
-            this.X1.Text = "X1";
-            // 
-            // Y1
-            // 
-            this.Y1.AutoSize = true;
-            this.Y1.Location = new System.Drawing.Point(83, 20);
-            this.Y1.Name = "Y1";
-            this.Y1.Size = new System.Drawing.Size(20, 13);
-            this.Y1.TabIndex = 3;
-            this.Y1.Text = "Y1";
-            // 
-            // X2
-            // 
-            this.X2.AutoSize = true;
-            this.X2.Location = new System.Drawing.Point(14, 20);
-            this.X2.Name = "X2";
-            this.X2.Size = new System.Drawing.Size(20, 13);
-            this.X2.TabIndex = 3;
-            this.X2.Text = "X2";
-            // 
-            // Y2
-            // 
-            this.Y2.AutoSize = true;
-            this.Y2.Location = new System.Drawing.Point(83, 20);
-            this.Y2.Name = "Y2";
-            this.Y2.Size = new System.Drawing.Size(20, 13);
-            this.Y2.TabIndex = 4;
-            this.Y2.Text = "Y2";
-            // 
-            // X3
-            // 
-            this.X3.AutoSize = true;
-            this.X3.Location = new System.Drawing.Point(14, 28);
-            this.X3.Name = "X3";
-            this.X3.Size = new System.Drawing.Size(20, 13);
-            this.X3.TabIndex = 3;
-            this.X3.Text = "X3";
-            // 
-            // Y3
-            // 
-            this.Y3.AutoSize = true;
-            this.Y3.Location = new System.Drawing.Point(83, 28);
-            this.Y3.Name = "Y3";
-            this.Y3.Size = new System.Drawing.Size(20, 13);
-            this.Y3.TabIndex = 4;
-            this.Y3.Text = "Y3";
-            // 
-            // X4
-            // 
-            this.X4.AutoSize = true;
-            this.X4.Location = new System.Drawing.Point(14, 16);
-            this.X4.Name = "X4";
-            this.X4.Size = new System.Drawing.Size(20, 13);
-            this.X4.TabIndex = 3;
-            this.X4.Text = "X4";
-            // 
-            // Y4
-            // 
-            this.Y4.AutoSize = true;
-            this.Y4.Location = new System.Drawing.Point(83, 17);
-            this.Y4.Name = "Y4";
-            this.Y4.Size = new System.Drawing.Size(20, 13);
-            this.Y4.TabIndex = 4;
-            this.Y4.Text = "Y4";
-            // 
             // QuadGenerator
             // 
             this.QuadGenerator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.QuadGenerator.Controls.Add(this.panel1);
             this.QuadGenerator.Controls.Add(this.PerimeterLabel);
             this.QuadGenerator.Controls.Add(this.AreaLabel);
             this.QuadGenerator.Controls.Add(this.textBox2);
@@ -290,19 +288,14 @@
             this.QuadGenerator.TabStop = false;
             this.QuadGenerator.Text = "Quadrilateral Generator";
             // 
-            // textBox1
+            // PerimeterLabel
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 249);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(199, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 20);
-            this.textBox2.TabIndex = 1;
+            this.PerimeterLabel.AutoSize = true;
+            this.PerimeterLabel.Location = new System.Drawing.Point(142, 252);
+            this.PerimeterLabel.Name = "PerimeterLabel";
+            this.PerimeterLabel.Size = new System.Drawing.Size(51, 13);
+            this.PerimeterLabel.TabIndex = 3;
+            this.PerimeterLabel.Text = "Perimeter";
             // 
             // AreaLabel
             // 
@@ -313,21 +306,19 @@
             this.AreaLabel.TabIndex = 2;
             this.AreaLabel.Text = "Area";
             // 
-            // PerimeterLabel
+            // textBox2
             // 
-            this.PerimeterLabel.AutoSize = true;
-            this.PerimeterLabel.Location = new System.Drawing.Point(142, 252);
-            this.PerimeterLabel.Name = "PerimeterLabel";
-            this.PerimeterLabel.Size = new System.Drawing.Size(51, 13);
-            this.PerimeterLabel.TabIndex = 3;
-            this.PerimeterLabel.Text = "Perimeter";
+            this.textBox2.Location = new System.Drawing.Point(199, 249);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(76, 20);
+            this.textBox2.TabIndex = 1;
             // 
-            // panel1
+            // textBox1
             // 
-            this.panel1.Location = new System.Drawing.Point(52, 38);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 190);
-            this.panel1.TabIndex = 4;
+            this.textBox1.Location = new System.Drawing.Point(52, 249);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // SimpleShapes
             // 
@@ -387,7 +378,6 @@
         private System.Windows.Forms.Label AreaLabel;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
     }
 }
 
