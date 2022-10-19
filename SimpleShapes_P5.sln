@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleShapes_P5", "SimpleShapes_P5\SimpleShapes_P5.csproj", "{75BE62E2-DA19-45FF-81D1-BCAC3C19C724}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadLibrary", "QuadLibrary\QuadLibrary.csproj", "{C6D3C681-73F3-492C-A6D0-13301A931A45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{75BE62E2-DA19-45FF-81D1-BCAC3C19C724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75BE62E2-DA19-45FF-81D1-BCAC3C19C724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75BE62E2-DA19-45FF-81D1-BCAC3C19C724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D3C681-73F3-492C-A6D0-13301A931A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D3C681-73F3-492C-A6D0-13301A931A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D3C681-73F3-492C-A6D0-13301A931A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D3C681-73F3-492C-A6D0-13301A931A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

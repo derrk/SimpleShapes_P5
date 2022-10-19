@@ -84,5 +84,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuadLibrary\QuadLibrary.csproj">
+      <Project>{c6d3c681-73f3-492c-a6d0-13301a931a45}</Project>
+      <Name>QuadLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
