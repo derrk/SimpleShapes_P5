@@ -57,11 +57,14 @@
             this.AreaLabel = new System.Windows.Forms.Label();
             this.PerimeterTextBox = new System.Windows.Forms.TextBox();
             this.AreaTextBox = new System.Windows.Forms.TextBox();
+            this.ShapeNameLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.P1box.SuspendLayout();
             this.P2box.SuspendLayout();
             this.P3box.SuspendLayout();
             this.P4box.SuspendLayout();
             this.QuadGenerator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ShapeComboBox
@@ -277,6 +280,8 @@
             // QuadGenerator
             // 
             this.QuadGenerator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.QuadGenerator.Controls.Add(this.pictureBox1);
+            this.QuadGenerator.Controls.Add(this.ShapeNameLabel);
             this.QuadGenerator.Controls.Add(this.PerimeterLabel);
             this.QuadGenerator.Controls.Add(this.AreaLabel);
             this.QuadGenerator.Controls.Add(this.PerimeterTextBox);
@@ -320,6 +325,24 @@
             this.AreaTextBox.Size = new System.Drawing.Size(76, 20);
             this.AreaTextBox.TabIndex = 0;
             // 
+            // ShapeNameLabel
+            // 
+            this.ShapeNameLabel.AutoSize = true;
+            this.ShapeNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShapeNameLabel.Location = new System.Drawing.Point(17, 26);
+            this.ShapeNameLabel.Name = "ShapeNameLabel";
+            this.ShapeNameLabel.Size = new System.Drawing.Size(0, 13);
+            this.ShapeNameLabel.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(121, 67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(212, 122);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // SimpleShapes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,6 +368,7 @@
             this.P4box.PerformLayout();
             this.QuadGenerator.ResumeLayout(false);
             this.QuadGenerator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,6 +402,8 @@
         private System.Windows.Forms.Label AreaLabel;
         private System.Windows.Forms.TextBox PerimeterTextBox;
         private System.Windows.Forms.TextBox AreaTextBox;
+        private System.Windows.Forms.Label ShapeNameLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

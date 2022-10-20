@@ -66,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SimpleShapes.resx">
       <DependentUpon>SimpleShapes.cs</DependentUpon>
@@ -89,6 +90,18 @@
       <Project>{c6d3c681-73f3-492c-a6d0-13301a931a45}</Project>
       <Name>QuadLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\parallelogram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\rectangle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\square.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\trapezoid.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

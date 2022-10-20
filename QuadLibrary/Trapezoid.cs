@@ -13,8 +13,8 @@ namespace QuadLibrary
 
         public int Height { get; set; }
 
-        public int Side1 { get; set; }
-        public int Side2 { get; set; }
+        public double Side1 { get; set; }
+        public double Side2 { get; set; }
         public int x1 { get; set; }
         public int y1 { get; set; }
         public int x2 { get; set; }
@@ -29,17 +29,23 @@ namespace QuadLibrary
             Name = "Trapezoid";
             Base = X3 - X1;
             Roof = X4 - X2;
+            Height = Y2 - Y1;
+            int b1 = X2 - X1;
+            int b2 = X3 - X4;
+            Side1 = Math.Sqrt(Math.Pow(Height, 2) + Math.Pow(b1, 2));
+            Side2 = Math.Sqrt(Math.Pow(Height, 2) + Math.Pow(b2, 2));
+
 
         }
 
         public override int Area()
         {
-            return (Base + Roof) /* height*/ / 2;
+            return ((Base + Roof)  / 2 ) * Height;
         }
 
         public override int Perimeter()
         {
-            return Base + Roof + Side1 + Side2;
+            return Convert.ToInt32(Base + Roof + Side1 + Side2);
         }
 
         public override void GetInfo()
