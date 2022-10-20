@@ -55,8 +55,8 @@
             this.QuadGenerator = new System.Windows.Forms.GroupBox();
             this.PerimeterLabel = new System.Windows.Forms.Label();
             this.AreaLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PerimeterTextBox = new System.Windows.Forms.TextBox();
+            this.AreaTextBox = new System.Windows.Forms.TextBox();
             this.P1box.SuspendLayout();
             this.P2box.SuspendLayout();
             this.P3box.SuspendLayout();
@@ -279,8 +279,8 @@
             this.QuadGenerator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.QuadGenerator.Controls.Add(this.PerimeterLabel);
             this.QuadGenerator.Controls.Add(this.AreaLabel);
-            this.QuadGenerator.Controls.Add(this.textBox2);
-            this.QuadGenerator.Controls.Add(this.textBox1);
+            this.QuadGenerator.Controls.Add(this.PerimeterTextBox);
+            this.QuadGenerator.Controls.Add(this.AreaTextBox);
             this.QuadGenerator.Location = new System.Drawing.Point(311, 32);
             this.QuadGenerator.Name = "QuadGenerator";
             this.QuadGenerator.Size = new System.Drawing.Size(467, 275);
@@ -306,19 +306,19 @@
             this.AreaLabel.TabIndex = 2;
             this.AreaLabel.Text = "Area";
             // 
-            // textBox2
+            // PerimeterTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(199, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 20);
-            this.textBox2.TabIndex = 1;
+            this.PerimeterTextBox.Location = new System.Drawing.Point(199, 249);
+            this.PerimeterTextBox.Name = "PerimeterTextBox";
+            this.PerimeterTextBox.Size = new System.Drawing.Size(76, 20);
+            this.PerimeterTextBox.TabIndex = 1;
             // 
-            // textBox1
+            // AreaTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 249);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
-            this.textBox1.TabIndex = 0;
+            this.AreaTextBox.Location = new System.Drawing.Point(52, 249);
+            this.AreaTextBox.Name = "AreaTextBox";
+            this.AreaTextBox.Size = new System.Drawing.Size(76, 20);
+            this.AreaTextBox.TabIndex = 0;
             // 
             // SimpleShapes
             // 
@@ -376,8 +376,8 @@
         private System.Windows.Forms.GroupBox QuadGenerator;
         private System.Windows.Forms.Label PerimeterLabel;
         private System.Windows.Forms.Label AreaLabel;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PerimeterTextBox;
+        private System.Windows.Forms.TextBox AreaTextBox;
     }
 }
 

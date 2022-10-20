@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace QuadLibrary
 {
-    internal class Parallelogram : Quadrilateral, Points
+    public class Parallelogram : Quadrilateral, Points
     {
         public int Length { get; set; }
-        public int Width { get; set; }
+        public double Width { get; set; }
+
+        public int Height { get; set; }
         public int x1 { get; set; }
         public int y1 { get; set; }
         public int x2 { get; set; }
@@ -23,6 +26,10 @@ namespace QuadLibrary
         {
 
             Length = X3 - X1;
+            int b = X2 - X1;
+            int a = Y2 - Y1;
+            Width = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+            Height = a;
 
             // points entered by user
             x1 = X1;
@@ -37,12 +44,12 @@ namespace QuadLibrary
 
         public override int Area()
         {
-            return Length * Width;
+            return Length * Height;
         }
 
         public override int Perimeter()
         {
-            return 2 * (Length + Width);
+            return Convert.ToInt32(2 * (Length + Width));
         }
     }
     }

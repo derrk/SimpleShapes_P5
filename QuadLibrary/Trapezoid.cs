@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace QuadLibrary
 {
-    internal class Trapezoid : Quadrilateral, Points
+    public class Trapezoid : Quadrilateral, Points
     {
         public int Base { get; set; }
         public int Roof { get; set; }
+
+        public int Height { get; set; }
 
         public int Side1 { get; set; }
         public int Side2 { get; set; }

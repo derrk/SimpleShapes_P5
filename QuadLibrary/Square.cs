@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace QuadLibrary
 {
-    internal class Square : Quadrilateral, Points
+    public class Square : Quadrilateral, Points
     {
-        public double Width { get; set; }
+        public int Width { get; set; }
         public int x1 { get; set; }
         public int y1 { get; set; }
         public int x2 { get; set; }
@@ -21,7 +21,7 @@ namespace QuadLibrary
         public Square(int X1, int Y1, int Y2)
         {
             Name = "Square";
-            Width = 4 * (Y2 - Y1);
+            Width = (Y2 - Y1);
             // these are being entered by the user
             x1 = X1;
             y1 = Y1;
@@ -41,7 +41,7 @@ namespace QuadLibrary
 
         public override int Perimeter()
         {
-            throw new NotImplementedException();
+            return 4 * Width;
         }
 
         public override void GetInfo()

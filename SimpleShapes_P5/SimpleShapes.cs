@@ -7,7 +7,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using QuadrilateralLibrary;
+using QuadLibrary;
 /*using System.Drawing;*/
 
 
@@ -42,14 +42,17 @@ namespace SimpleShapes_P5
             else if (ShapeComboBox.SelectedIndex == 1)
             {
                 Console.WriteLine("Selected Square");
+                // TODO: disable appropriate textboxes
             }
             else if (ShapeComboBox.SelectedIndex == 2)
             {
                 Console.WriteLine("Selected Parallelogram");
+                // TODO: disable appropriate textboxes
             }
             else if (ShapeComboBox.SelectedIndex == 3)
             {
                 Console.WriteLine("Selected Trapezoid");
+                // TODO: disable appropriate textboxes
             }
         }
 
@@ -68,17 +71,39 @@ namespace SimpleShapes_P5
                     y1 = int.Parse(y_P1.Text);
                     y2 = int.Parse(y_P2.Text);
                     x3 = int.Parse(x_P3.Text);
-                  //  Rectangle rectangle = new Rectangle(x1, y1, x3, y2);
-                   // QuadrilateralLibrary.Quadrilateral rectangle1 = new Rectangle(x1, y1, x3, y2);
-                    // Console.WriteLine($"{rectangle.Name} has points: {x1}, {y1}, {x3}, {y2}");
-                   // AreaLabel.Text = rectangle.Area().ToString();
+                  Rectangle rectangle = new Rectangle(x1, y1, x3, y2);
+                    Console.WriteLine($"{rectangle.Name} has points: {x1}, {y1}, {x3}, {y2}");
+                   AreaTextBox.Text = rectangle.Area().ToString();
+                    PerimeterTextBox.Text = rectangle.Perimeter().ToString();
                     
                     break;
                 case 1:
+                    // square
+                    x1 = int.Parse(x_P1.Text);
+                    y1 = int.Parse(y_P1.Text);
+                    y2= int.Parse(y_P2.Text);
+                    Square square = new Square(x1, y1, y2);
+                    AreaTextBox.Text = square.Area().ToString();
+                    PerimeterTextBox.Text = square.Perimeter().ToString();
                     break;
                 case 2:
+                    // parallelogram
+                    // Point 1
+                    x1 = int.Parse(x_P1.Text);
+                    y1 = int.Parse(y_P1.Text);
+                    // Point 2
+                    x2 = int.Parse(x_P2.Text);
+                    y2 = int.Parse(y_P2.Text);
+                    // Point 3 x only
+                    x3 = int.Parse(x_P3.Text);
+                    Parallelogram parallelogram = new Parallelogram(x1, y1, x2, y2, x3); 
+
+                    AreaTextBox.Text = parallelogram.Area().ToString();
+                    PerimeterTextBox.Text = parallelogram.Perimeter().ToString();
+
                     break;
                 case 3:
+                    // trapezoid
                     break;
                 default:
                     break;
