@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuadLibrary
 {
+    // inherit base class and interface
     public class Rectangle : Quadrilateral, Points
     {
         public int Width { get; set; }
@@ -18,7 +19,7 @@ namespace QuadLibrary
         public int x4 { get; set; }
         public int y3 { get; set; }
         public int y4 { get; set; }
-
+        // constructor for rectangles
         public Rectangle(int X1, int Y1, int X3, int Y2)
         {
             Name = "Rectangle";
@@ -28,7 +29,11 @@ namespace QuadLibrary
             y1 = Y1;
             x3 = X3;
             y2 = Y2;
-
+            x2 = X1;
+            y3 = Y1;
+            y4 = Y2;
+            x4 = X3;
+            // call all base methods to initialize constructor
             Area();
             Perimeter();
             GetInfo();

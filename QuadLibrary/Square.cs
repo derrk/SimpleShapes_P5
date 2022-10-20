@@ -36,6 +36,7 @@ namespace QuadLibrary
 
         public override int Area()
         {
+            // convert to int and truncate the decimal values
             return Convert.ToInt32(Math.Pow(Width, 2));
         }
 
